@@ -57,21 +57,21 @@ public class Main {
     public static void ifElseExample() {
         // This machine checks ur age if you are allowed to drink
         int age = 29;    
-        if (age < 18) {                                                   // If you are below the age of 18 you are only allowed to drink beer
+        if (age < 18) {                                   // If you are below the age of 18 you are only allowed to drink beer
             System.out.println("You can only drink beer!");      
         }    
-            else if (age > 64) {                                          // If you are over the age of 64 it tells you to not drink too much
-                System.out.println("Not too much grandpa!");
-            }
-                else if (age < 16) {                                      // If you are below the age of 16 it tells you that you arent allowed to drink anything 
-                    System.out.println("You are not allowed to drink!!");
-                }
-                    else if (age < 6) {                                   // If you are below the age oh 6 it tells you that you are a baby
-                        System.out.println("You are a baby!!!");
-                    }
-                        else {                                            // If You are above the age of 18 you are allowed to drink freely
-                            System.out.println("You can drink.");
-                        }    
+        else if (age > 64) {                              // If you are over the age of 64 it tells you to not drink too much
+            System.out.println("Not too much grandpa!");
+        }
+        else if (age < 16) {                              // If you are below the age of 16 it tells you that you arent allowed to drink anything 
+            System.out.println("You are not allowed to drink!!");
+        }
+        else if (age < 6) {                               // If you are below the age oh 6 it tells you that you are a baby
+            System.out.println("You are a baby!!!");
+        }
+        else {                                            // If You are above the age of 18 you are allowed to drink freely
+            System.out.println("You can drink.");
+        }    
     }
 
     public static void switchExample() {
