@@ -1,6 +1,6 @@
 public class Main {
 
-    public static void printExample() {
+    public static void outputExample() {
     // Introduction and my goal
     System.out.println("        Hello!");
     System.out.println("      I'm Alket."); 
@@ -138,7 +138,7 @@ public class Main {
     public static void main(String[] args) {
     // Runs everything 
         System.out.println("### First Example ###");
-        Main.printExample();
+        Main.outputExample();
         
         System.out.println(" ");
         System.out.println("### Second Example ###");
