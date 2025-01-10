@@ -74,8 +74,6 @@ public class Main {
                         }    
     }
 
-
-
     public static void switchExample() {
         // Enter a day and it tells you what weekday it is in January 2025
         int day = 78;
@@ -106,9 +104,39 @@ public class Main {
   
     }
     
+    public static void loopExample() {
+        // Countdown for my birthday
+        int countdown = 10;                          // Counts down from 10
+        while (countdown > 0) {                      // Until it hits 0
+            System.out.println(countdown);           // This prints out the numbers from 10 to 0
+            countdown--;
+        }
+        System.out.println("Happy Birthday!!!");   
+        /** When the timer reaches 1 instead of 
+        zero it prints out "Happy Birthday" */
+    }
+    
+    public static void breakContinueExample() {
+    /* Continue: Breaks the selected number (for this case 4) and continues with the rest
+    while break just breaks the code from an selected case and doesnt continue*/
+        for (int i = 0; i < 10; i++) {     // Code counts to from 0 to 10
+            if (i == 4) {                  // Selected number that is selected to break is 4
+                continue;                  // Command "breaks" the number 4 and continues from 5
+            }
+            System.out.println(i);         // Prints out the numbers except 4 because of the "continue" command
+        }  
+    }
+      
+    public static void arraysExample() {
+    // Lists car brands that are given
+        String[] cars = {"Ferrari", "Mercedes-Benz", "Lamborghini", "Porsche", "BMW", "Audi"}; 
+        for(int i = 0; i < cars.length; i++) { // 
+            System.out.println(cars[i]);
+        }
+    }
 
     public static void main(String[] args) {
-        
+    // Runs everything 
         System.out.println("### First Example ###");
         Main.printExample();
         
@@ -133,7 +161,19 @@ public class Main {
         Main.ifElseExample();
 
         System.out.println(" ");
-        System.out.println("### Ninth Example ###");
+        System.out.println("### Seventh Example ###");
         Main.switchExample();
+
+        System.out.println(" ");
+        System.out.println("### Eighth Example ###");
+        Main.loopExample();
+
+        System.out.println(" ");
+        System.out.println("### Ninth Example ###");
+        Main.breakContinueExample();
+
+        System.out.println(" ");
+        System.out.println("### Tenth Example ###");
+        Main.arraysExample();
     }
 }
