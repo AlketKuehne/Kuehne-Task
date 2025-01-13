@@ -1,6 +1,6 @@
 # Kuehne-Task
 
-## W3 Schools
+## W3Schools-Task
 
 Hello!
 I'm Alket, and I'm 18 years old. My task
