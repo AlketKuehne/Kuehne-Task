@@ -1,4 +1,4 @@
-# Kuehne Exercise
+# Kuehne-Task
 
 ## W3 Schools
 
