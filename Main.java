@@ -2,13 +2,13 @@ public class Main {
 
     public static void outputExample() {
     // Introduction and my goal
-    System.out.println("        Hello!");
-    System.out.println("      I'm Alket."); 
-    System.out.println("   I'm 17 years old");
-    System.out.println("   and I'm going to");
-    System.out.println("  be 18 at 10th January.");
-    System.out.println("  Right now im trying to");
-    System.out.println(" learn java from scratch.");
+        System.out.println("        Hello!");
+        System.out.println("      I'm Alket."); 
+        System.out.println("   I'm 17 years old");
+        System.out.println("   and I'm going to");
+        System.out.println("  be 18 at 10th January.");
+        System.out.println("  Right now im trying to");
+        System.out.println(" learn java from scratch.");
     }
 
     public static void variablesExample() {
@@ -29,12 +29,12 @@ public class Main {
 
     public static void operatorExample() {
         // Some math with different operators
-        int sum1 = 100 * 5; // 500 (100 * 5)
-        int sum2 = sum1 / 2; // 250 (500 / 2)
-        int sum3 = sum2 + sum1; // 750 (250 + 500)
-        System.out.println("Sum1= " + sum1 ); // Sum1 = 500
-        System.out.println("Sum2= " + sum2 ); // Sum2 = 250
-        System.out.println("Sum3= " + sum3 ); // Sum3 = 750 
+        int sum1 = 100 * 5;                     // 500 (100 * 5)
+        int sum2 = sum1 / 2;                    // 250 (500 / 2)
+        int sum3 = sum2 + sum1;                 // 750 (250 + 500)
+        System.out.println("Sum1= " + sum1 );   // Sum1 = 500
+        System.out.println("Sum2= " + sum2 );   // Sum2 = 250
+        System.out.println("Sum3= " + sum3 );   // Sum3 = 750 
     }
 
     public static void mathExample() {
@@ -129,9 +129,9 @@ public class Main {
       
     public static void arraysExample() {
     // Lists car brands that are given
-        String[] cars = {"Ferrari", "Mercedes-Benz", "Lamborghini", "Porsche", "BMW", "Audi"}; 
-        for(int i = 0; i < cars.length; i++) { // 
-            System.out.println(cars[i]);
+        String[] cars = {"Ferrari", "Mercedes-Benz", "Lamborghini", "Porsche", "BMW", "Audi"};  // Cars that are going to be listed
+        for(int i = 0; i < cars.length; i++) {  
+            System.out.println(cars[i]);                                                        // Writes down the car brands
         }
     }
 
@@ -175,5 +175,6 @@ public class Main {
         System.out.println(" ");
         System.out.println("### Tenth Example ###");
         Main.arraysExample();
+        
     }
 }
