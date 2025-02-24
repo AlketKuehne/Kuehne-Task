@@ -1,7 +1,8 @@
 public class Main {
 
     public static void outputExample() {
-    // Introduction and my goal
+    /* Introduction and my goal
+    lines below print out the */
         System.out.println("        Hello!");
         System.out.println("      I'm Alket."); 
         System.out.println("   I'm 17 years old");
@@ -39,11 +40,11 @@ public class Main {
 
     public static void mathExample() {
         // "Math." commands
-        System.out.println(Math.max(200, 201)); // Picks the higher number                 (201)
-        System.out.println(Math.min(200,201));  // Picks the lower number                  (200)
-        System.out.println(Math.sqrt(81));        // Calculates the squareroot               (9)
-        System.out.println(Math.abs(-322));         // Returns the number positive             (322)
-        System.out.println(Math.random() * 101);    // Picks a random number between 0 - 100   (???)
+        System.out.println(Math.max(200, 201));     // Picks the higher number                 (201)
+        System.out.println(Math.min(200,201));      // Picks the lower number                  (200)
+        System.out.println(Math.sqrt(81));            // Calculates the squareroot               (9)
+        System.out.println(Math.abs(-322));             // Returns the number positive             (322)
+        System.out.println(Math.random() * 101);        // Picks a random number between 0 - 100   (???)
     }
 
     public static void booleansExample() {
@@ -56,7 +57,7 @@ public class Main {
 
     public static void ifElseExample() {
         // This machine checks ur age if you are allowed to drink
-        int age = 29;    
+        int age = 18;    
         if (age < 18) {                                   // If you are below the age of 18 you are only allowed to drink beer
             System.out.println("You can only drink beer!");      
         }    
@@ -129,12 +130,13 @@ public class Main {
       
     public static void arraysExample() {
     // Lists car brands that are given
-        String[] cars = {"Ferrari", "Mercedes-Benz", "Lamborghini", "Porsche", "BMW", "Audi"};  // Cars that are going to be listed
+        String[] cars = {"Ferrari", "Mercedes-Benz", "Lamborghini", "Porsche", "BMW", "Audi"};  // Cars that are being listed
         for(int i = 0; i < cars.length; i++) {  
             System.out.println(cars[i]);                                                        // Writes down the car brands
         }
     }
 
+    
     public static void main(String[] args) {
     // Runs everything 
         System.out.println("### First Example ###");
