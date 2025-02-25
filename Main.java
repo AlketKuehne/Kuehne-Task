@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+
 public class Main {
 
     public static void outputExample() {
@@ -136,7 +140,48 @@ public class Main {
         }
     }
 
+    public static void listSortingExample() {
+        ArrayList<Integer> myNumbers = new ArrayList<Integer>();    // Creates the Arraylist "myNumbers" and stores only Integers
+        // Code below adds six numbers to the "myNumbers" List
+        myNumbers.add(1000);
+        myNumbers.add(256);
+        myNumbers.add(160);
+        myNumbers.add(20);
+        myNumbers.add(4);
+        myNumbers.add(0);
     
+        Collections.sort(myNumbers, Collections.reverseOrder());    // Sorts the numbers in the list in descending order
+    
+        for (int i : myNumbers) {   // Scans the numbers that will be in the list
+            System.out.println(i);  // The scanned valid numbers are being printed
+        }
+    }
+
+    public static void iteratorExample() {
+        ArrayList<Integer> numbers = new ArrayList<Integer>();  // Creates Arraylist that only stores Integers
+        // Code below are the given values
+        numbers.add(10);
+        numbers.add(8);
+        numbers.add(9);
+        numbers.add(100);
+        
+        // Creates an iterator to iterate through the list
+        Iterator<Integer> it = numbers.iterator();
+        
+        // Loops through the list and iterates
+        while (it.hasNext()) {
+            Integer i = it.next();
+            // Removes values less than 10
+            if (i < 10) {
+                it.remove();
+            }
+        }
+        
+        // Prints the edited list
+        System.out.println(numbers); 
+    }
+    
+
     public static void main(String[] args) {
     // Runs everything 
         System.out.println("### First Example ###");
@@ -178,5 +223,12 @@ public class Main {
         System.out.println("### Tenth Example ###");
         Main.arraysExample();
         
+        System.out.println(" ");
+        System.out.println("### Eleventh Example ###");
+        Main.listSortingExample();
+
+        System.out.println(" ");
+        System.out.println("### Twelfth Example ###");
+        Main.iteratorExample();
     }
 }
