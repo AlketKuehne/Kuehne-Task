@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Main {
 
@@ -180,8 +182,24 @@ public class Main {
         // Prints the edited list
         System.out.println(numbers); 
     }
-    
 
+    public static void regExExample() {
+        // Wi
+        Pattern pattern = Pattern.compile("P", Pattern.CASE_INSENSITIVE);
+        
+        Matcher matcher = pattern.matcher("Password"); // The word that 
+        
+        // Check if the pattern was found
+        boolean matchFound = matcher.find();
+        
+        // Print result
+        if (matchFound) {
+            System.out.println("Match found");
+        } else {
+            System.out.println("Match not found");
+        }
+    }
+    
     public static void main(String[] args) {
     // Runs everything 
         System.out.println("### First Example ###");
@@ -230,5 +248,9 @@ public class Main {
         System.out.println(" ");
         System.out.println("### Twelfth Example ###");
         Main.iteratorExample();
+
+        System.out.println(" ");
+        System.out.println("### Thirteenth Example ###");
+        Main.regExExample();
     }
 }
