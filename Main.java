@@ -1,8 +1,9 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.ArrayList;     // Imports Arraylist class; dynamic list
+import java.util.Collections;   // Imports Collections class; contains methods of sorting and modifying collections
+import java.util.Iterator;      // Imports Iterator interface; allows to iterate over collections such as lists and sets
+import java.util.regex.Matcher; // Imports Matcher class; which is used to perform matching operations on strings
+import java.util.regex.Pattern; // Imports Pattern class; creates Matcher for matching strings
+import java.util.Scanner;       // Imports Scanner class; to get user input from the console
 
 public class Main {
 
@@ -185,18 +186,28 @@ public class Main {
 
     public static void regExExample() {
         // Wi
-        Pattern pattern = Pattern.compile("P", Pattern.CASE_INSENSITIVE);
+        Pattern pattern = Pattern.compile("P", Pattern.CASE_INSENSITIVE); // Type anything you want between the ""
         
-        Matcher matcher = pattern.matcher("Password"); // The word that 
+        Matcher matcher = pattern.matcher("Password"); // The word that is to match
         
-        // Check if the pattern was found
+        // Check if the "P" matches with "Password"
         boolean matchFound = matcher.find();
         
         // Print result
         if (matchFound) {
-            System.out.println("Match found");
+            System.out.println("Match found");  // If it matches with password it prints out "Match found"
         } else {
-            System.out.println("Match not found");
+            System.out.println("Match not found");  // If it matches with password it prints out "Match not found"
+        }
+    }
+
+    public static void scannerExample() {
+        try (Scanner myObj = new Scanner(System.in)) {  // Creates an scanner that gets users input from the console
+            // Code below is simply just to print out text
+            System.out.println("Im going to show you a magic trick now!");
+            System.out.println("Think of any comination:");
+            String userName = myObj.nextLine(); // Except this, this is for reading ur input and saving it
+            System.out.println("You are thinking of the combination " + userName + " am I correct?");
         }
     }
     
@@ -252,5 +263,9 @@ public class Main {
         System.out.println(" ");
         System.out.println("### Thirteenth Example ###");
         Main.regExExample();
+
+        System.out.println(" ");
+        System.out.println("### Fourteenth Example ###");
+        Main.scannerExample();
     }
 }
