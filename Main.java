@@ -210,6 +210,27 @@ public class Main {
             System.out.println("You are thinking of the combination " + userName + " am I correct?");
         }
     }
+
+    public static void enumsExample() {
+        enum Level {    // "Level" is the name of the enum
+        // Code below are the values of this enum
+            LOW,
+            MEDIUM,
+            HIGH
+        }
+        Level myVar = Level.HIGH;
+        switch(myVar) {
+            case LOW:
+                System.out.println("Low level");
+                break;
+            case MEDIUM:
+                System.out.println("Medium level");
+                break;
+            case HIGH:
+                System.out.println("High level");
+                break;
+        }
+    }
     
     public static void main(String[] args) {
     // Runs everything 
@@ -267,5 +288,9 @@ public class Main {
         System.out.println(" ");
         System.out.println("### Fourteenth Example ###");
         Main.scannerExample();
+
+        System.out.println(" ");
+        System.out.println("### Fifteenth Example ###");
+        Main.enumsExample();
     }
 }
