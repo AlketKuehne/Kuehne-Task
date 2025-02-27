@@ -31,3 +31,15 @@ W3Schools. The result is the "Main.java" file.
 #### 9. Break/Continue
 
 #### 10. Arrays
+
+#### 11. List & Sorting
+
+#### 12. Itereator
+
+#### 13. Regular Expressions
+
+#### 14. Scanner
+
+#### 15. Enums
+
+#### 16. Date & Time

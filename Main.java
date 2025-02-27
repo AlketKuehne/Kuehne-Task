@@ -1,9 +1,11 @@
-import java.util.ArrayList;     // Imports Arraylist class; dynamic list
-import java.util.Collections;   // Imports Collections class; contains methods of sorting and modifying collections
-import java.util.Iterator;      // Imports Iterator interface; allows to iterate over collections such as lists and sets
-import java.util.regex.Matcher; // Imports Matcher class; which is used to perform matching operations on strings
-import java.util.regex.Pattern; // Imports Pattern class; creates Matcher for matching strings
-import java.util.Scanner;       // Imports Scanner class; to get user input from the console
+import java.util.ArrayList;                 // Imports Arraylist class; dynamic list
+import java.util.Collections;               // Imports Collections class; contains methods of sorting and modifying collections
+import java.util.Iterator;                  // Imports Iterator interface; allows to iterate over collections such as lists and sets
+import java.util.regex.Matcher;             // Imports Matcher class; which is used to perform matching operations on strings
+import java.util.regex.Pattern;             // Imports Pattern class; creates Matcher for matching strings
+import java.util.Scanner;                   // Imports Scanner class; to get user input from the console
+import java.time.LocalDateTime;             // Imports LocalDateTime class; that can track your local time
+import java.time.format.DateTimeFormatter;  // Imports DateTimeFormatter class; that formats ur date & time output
 
 public class Main {
 
@@ -185,14 +187,10 @@ public class Main {
     }
 
     public static void regExExample() {
-        // Wi
         Pattern pattern = Pattern.compile("P", Pattern.CASE_INSENSITIVE); // Type anything you want between the ""
-        
         Matcher matcher = pattern.matcher("Password"); // The word that is to match
-        
         // Check if the "P" matches with "Password"
         boolean matchFound = matcher.find();
-        
         // Print result
         if (matchFound) {
             System.out.println("Match found");  // If it matches with password it prints out "Match found"
@@ -218,8 +216,9 @@ public class Main {
             MEDIUM,
             HIGH
         }
-        Level myVar = Level.HIGH;
+        Level myVar = Level.HIGH;   // Decides what message is going to be shown when you adjust the "Level.HIGH" part
         switch(myVar) {
+            // Different cases for the values
             case LOW:
                 System.out.println("Low level");
                 break;
@@ -231,9 +230,18 @@ public class Main {
                 break;
         }
     }
+
+    public static void dateTimeExample() {
+        // Gets the current Date and Time using LocalDateTime import
+        LocalDateTime myDateObj = LocalDateTime.now();  // Gets Date and Time from System clock
+        // Format of the Date and Time pattern
+        DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss"); // "dd--MM-yyyy" = day-month-year and "HH:mm:ss" = hour:minute:secound
+        String formattedDate = myDateObj.format(myFormatObj);   
+        System.out.println("Todays Date and Time: " + formattedDate); // Prints out the Message and always the current time when printed out
+    }
     
     public static void main(String[] args) {
-    // Runs everything 
+    // Executes every method that is given in this code below
         System.out.println("### First Example ###");
         Main.outputExample();
         
@@ -292,5 +300,9 @@ public class Main {
         System.out.println(" ");
         System.out.println("### Fifteenth Example ###");
         Main.enumsExample();
+
+        System.out.println(" ");
+        System.out.println("### Sixteenth Example ###");
+        Main.dateTimeExample();
     }
 }
