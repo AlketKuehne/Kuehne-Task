@@ -6,7 +6,8 @@ import java.util.regex.Pattern;             // Imports Pattern class; creates Ma
 import java.util.Scanner;                   // Imports Scanner class; to get user input from the console
 import java.time.LocalDateTime;             // Imports LocalDateTime class; that can track your local time
 import java.time.format.DateTimeFormatter;  // Imports DateTimeFormatter class; that formats ur date & time output
-import java.util.HashMap;                   // Imports HashMap class; 
+import java.util.HashMap;                   // Imports HashMap class; that stores value pairs
+import java.util.HashSet;                   // Imports HashSet class; that allows efficient insertion, removal and lookup operations
 
 public class Main {
 
@@ -243,12 +244,42 @@ public class Main {
 
     public static void hashMapExample() {
         HashMap<String, Integer> teams = new HashMap<String, Integer>();
-        teams.put("HSV      ",  33);
-        teams.put("Bayern   ",  33);
-        teams.put("Dortmund ",  31);
+        teams.put("Bayern               ",  58);
+        teams.put("Leverkusen           ",  50);
+        teams.put("Eintracht Frankfurt  ",  42);
     
         for (String i : teams.keySet()) {
             System.out.println("Team: " + i + " Punkte: " + teams.get(i));
+        }
+    }
+
+    public static void hashSetExample() {
+        HashSet<String> teams = new HashSet<String>();
+        teams.add("Bayern");
+        teams.add("Leverkusen");
+        teams.add("Eintracht Frankfurt");
+        teams.add("Freiburg");
+        teams.add("Mainz");
+        teams.add("RB Leipzig");
+        teams.add("VfB Stuttgart");
+        teams.add("Wolfsburg");
+        teams.add("Mönchengladbach");
+        teams.add("Dortmund");
+        teams.add("Augsburg");
+        teams.add("Werder Bremen");
+        teams.add("Union Berlin");
+        teams.add("Hoffenheim");
+        teams.add("St. Pauli");
+        teams.add("Heidenheim");
+        teams.add("Bochum");
+        teams.add("Holstein");
+    
+        String teamToCheck = "HSV";
+    
+        if (teams.contains(teamToCheck)) {
+            System.out.println(teamToCheck + " is in 1. Bundesliga.");
+        } else {
+            System.out.println(teamToCheck + " is not in 1. Bundesliga.");
         }
     }
     
@@ -320,5 +351,9 @@ public class Main {
         System.out.println(" ");
         System.out.println("### Seventeenth Example ###");
         Main.hashMapExample();
+
+        System.out.println(" ");
+        System.out.println("### Eighteenth Example ###");
+        Main.hashSetExample();
     }
 }
