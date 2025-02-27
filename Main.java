@@ -1,6 +1,5 @@
 import java.util.ArrayList;                 // Imports Arraylist class; dynamic list
 import java.util.Collections;               // Imports Collections class; contains methods of sorting and modifying collections
-import java.util.HashMap;
 import java.util.Iterator;                  // Imports Iterator interface; allows to iterate over collections such as lists and sets
 import java.util.regex.Matcher;             // Imports Matcher class; which is used to perform matching operations on strings
 import java.util.regex.Pattern;             // Imports Pattern class; creates Matcher for matching strings
