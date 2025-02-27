@@ -43,3 +43,7 @@ W3Schools. The result is the "Main.java" file.
 #### 15. Enums
 
 #### 16. Date & Time
+
+#### 17. HashMap
+
+#### 18. HashSet
