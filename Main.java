@@ -1,11 +1,15 @@
 import java.util.ArrayList;                 // Imports Arraylist class; dynamic list
 import java.util.Collections;               // Imports Collections class; contains methods of sorting and modifying collections
+import java.util.HashMap;
 import java.util.Iterator;                  // Imports Iterator interface; allows to iterate over collections such as lists and sets
 import java.util.regex.Matcher;             // Imports Matcher class; which is used to perform matching operations on strings
 import java.util.regex.Pattern;             // Imports Pattern class; creates Matcher for matching strings
 import java.util.Scanner;                   // Imports Scanner class; to get user input from the console
 import java.time.LocalDateTime;             // Imports LocalDateTime class; that can track your local time
 import java.time.format.DateTimeFormatter;  // Imports DateTimeFormatter class; that formats ur date & time output
+import java.util.HashMap;                   // Imports HashMap class; 
+
+@SuppressWarnings("unused")
 
 public class Main {
 
@@ -204,7 +208,7 @@ public class Main {
             // Code below is simply just to print out text
             System.out.println("Im going to show you a magic trick now!");
             System.out.println("Think of any comination:");
-            String userName = myObj.nextLine(); // Except this, this is for reading ur input and saving it
+            String userName = myObj.nextLine(); // Except this, this is for reading your input and saving it
             System.out.println("You are thinking of the combination " + userName + " am I correct?");
         }
     }
@@ -238,6 +242,17 @@ public class Main {
         DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss"); // "dd--MM-yyyy" = day-month-year and "HH:mm:ss" = hour:minute:secound
         String formattedDate = myDateObj.format(myFormatObj);   
         System.out.println("Todays Date and Time: " + formattedDate); // Prints out the Message and always the current time when printed out
+    }
+
+    public static void hashMapExample() {
+        HashMap<String, Integer> people = new HashMap<String, Integer>();
+        people.put("John", 32);
+        people.put("Steve", 30);
+        people.put("Angie", 33);
+    
+        for (String i : people.keySet()) {
+            System.out.println("Name: " + i + " Age: " + people.get(i));
+        }
     }
     
     public static void main(String[] args) {
@@ -304,5 +319,9 @@ public class Main {
         System.out.println(" ");
         System.out.println("### Sixteenth Example ###");
         Main.dateTimeExample();
+
+        System.out.println(" ");
+        System.out.println("### Seventeenth Example ###");
+        Main.hashMapExample();
     }
 }
