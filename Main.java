@@ -242,13 +242,13 @@ public class Main {
     }
 
     public static void hashMapExample() {
-        HashMap<String, Integer> people = new HashMap<String, Integer>();
-        people.put("John", 32);
-        people.put("Steve", 30);
-        people.put("Angie", 33);
+        HashMap<String, Integer> teams = new HashMap<String, Integer>();
+        teams.put("HSV      ",  33);
+        teams.put("Bayern   ",  33);
+        teams.put("Dortmund ",  31);
     
-        for (String i : people.keySet()) {
-            System.out.println("Name: " + i + " Age: " + people.get(i));
+        for (String i : teams.keySet()) {
+            System.out.println("Team: " + i + " Punkte: " + teams.get(i));
         }
     }
     
