@@ -8,8 +8,6 @@ import java.time.LocalDateTime;             // Imports LocalDateTime class; that
 import java.time.format.DateTimeFormatter;  // Imports DateTimeFormatter class; that formats ur date & time output
 import java.util.HashMap;                   // Imports HashMap class; 
 
-@SuppressWarnings("unused")
-
 public class Main {
 
     public static void outputExample() {
