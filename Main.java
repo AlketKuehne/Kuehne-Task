@@ -143,7 +143,7 @@ public class Main {
     // Lists car brands that are given
         String[] cars = {"Ferrari", "Mercedes-Benz", "Lamborghini", "Porsche", "BMW", "Audi"};  // Cars that are being listed
         for(int i = 0; i < cars.length; i++) {  
-            System.out.println(cars[i]);                                                        // Writes down the car brands
+            System.out.println(cars[i]);        // Writes down the car brands
         }
     }
 
@@ -255,6 +255,7 @@ public class Main {
 
     public static void hashSetExample() {
         HashSet<String> teams = new HashSet<String>();
+        // Code below adds Soccerteams from the 1. Bundesliga
         teams.add("Bayern");
         teams.add("Leverkusen");
         teams.add("Eintracht Frankfurt");
@@ -273,13 +274,12 @@ public class Main {
         teams.add("Heidenheim");
         teams.add("Bochum");
         teams.add("Holstein");
-    
-        String teamToCheck = "HSV";
-    
+        String teamToCheck = "HSV"; // Team to check if it is on the list
+        // Checks if the team "HSV" is on the list
         if (teams.contains(teamToCheck)) {
-            System.out.println(teamToCheck + " is in 1. Bundesliga.");
+            System.out.println(teamToCheck + " is in 1. Bundesliga.");      // If team is on list
         } else {
-            System.out.println(teamToCheck + " is not in 1. Bundesliga.");
+            System.out.println(teamToCheck + " is not in 1. Bundesliga.");  // If team ist on list
         }
     }
     
