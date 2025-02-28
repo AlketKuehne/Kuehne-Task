@@ -282,6 +282,17 @@ public class Main {
             System.out.println(teamToCheck + " is not in 1. Bundesliga.");  // If team ist on list
         }
     }
+
+    public static void tryCatchExample() {
+        try {
+            // Trys to convert string into an integer
+            String str = "I23";  // Cases error because "I23" is not an valid number
+            int number = Integer.parseInt(str);
+            System.out.println("Number: " + number);
+        } catch (NumberFormatException e) {
+            System.out.println("Error: Invalid number.");   // Message that pops up when an error is caused
+        }
+    }
     
     public static void main(String[] args) {
     // Executes every method that is given in this code below
@@ -355,5 +366,9 @@ public class Main {
         System.out.println(" ");
         System.out.println("### Eighteenth Example ###");
         Main.hashSetExample();
+
+        System.out.println(" ");
+        System.out.println("### Eighteenth Example ###");
+        Main.tryCatchExample();
     }
 }
