@@ -275,7 +275,7 @@ public class Main {
         teams.add("Bochum");
         teams.add("Holstein");
         String teamToCheck = "HSV"; // Team to check if it is on the list
-        // Checks if the team "HSV" is on the list
+        // Line below checks if the team "HSV" is on the list
         if (teams.contains(teamToCheck)) {
             System.out.println(teamToCheck + " is in 1. Bundesliga.");      // If team is on list
         } else {
